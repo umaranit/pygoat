@@ -1,7 +1,9 @@
 name: CodeQL
 on:
-  [push]
-
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 env:
   AZURE_WEBAPP_NAME: 'toolkitdemo-python' 
   AZURE_WEBAPP_PACKAGE_PATH: '.' 
